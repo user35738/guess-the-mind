@@ -379,7 +379,7 @@ function renderStatus() {
 			),
 		);
 		const row = el("div", "row");
-		["Yes", "No", "Sort of"].forEach((word) => {
+		["Yes", "No", "Sort of", "Not sure", "Don’t know"].forEach((word) => {
 			const button = el("button", "btn alt", word);
 			button.onclick = () => sendChat("answer", word);
 			row.appendChild(button);
